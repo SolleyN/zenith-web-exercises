@@ -277,3 +277,52 @@ for (let i = 0; i < classMates.length; i += 1) {
 // !! Write a function, returnLongString, that takes in an array of strings and returns all strings concatenated together !!
 // !! Write a function, returnArrSum, that takes in an array of values and returns the sum of all number elements !!
 
+
+    const arr = [1, 2, 3, 4];
+
+    function logNums() {
+    }
+arr.forEach(function (input) {
+    console.log(input);
+
+});
+
+    const arrStrings = ['apple', 'toast', 'cats', 'dogs'];
+    function returnLongString(arr) {
+        return arr.join('');
+        console.log(returnLongString(arrStrings));
+    }
+
+    const array = [ 1, 2, 3, 4, 5];
+    function returnArrSum(arr) {
+    }
+    let sum = 0;
+    for (let i = 0; i < arr.length; i += 1) {
+        sum += arr[i];
+    }
+    return sum;
+        console.log(returnArrSum(array))
+    }
+
+
+    const foods = [
+        'pie',
+        'pizza',
+        'tortas',
+        'tacos',
+        'pringles',
+        'chips',
+        'eggs', //vowel
+        'pineapple',
+        'apple',  //vowel
+        'hamburger'
+    ];
+for (let i = 0; i < foods.length; i += 1) {
+    let firstChar = foods[i][0];
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    if (vowels.includes(firstChar)); {
+        console.log(foods[i]); // if the first char is a vowel
+    }
+    console.log(foods[i][0]);
+
+}
