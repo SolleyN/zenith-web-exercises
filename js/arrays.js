@@ -39,25 +39,26 @@
 
     // declaring and initializing a large array
 
-    let students = [
-    "Justin",
-    "Javier",
-    "Laura",
-    "Isaac",
-    "Trevor",
-    "Dane",
-    "Ryan",
-    "Vivian"
-    ];
+    // let students = [
+    // "Justin",
+    // "Javier",
+    // "Laura",
+    // "Isaac",
+    // "Trevor",
+    // "Dane",
+    // "Ryan",
+    // "Vivian"
+    // ];
+
 
 
     // 3
 
-    console.log(students[students.length - 1]);
+    // console.log(students[students.length - 1]);
 
 
 
-    console.log(students[100]);
+    // console.log(students[100]);
 
 
 
@@ -110,9 +111,14 @@
     2. Practice console logging each classmate separately.
     3. Reassign the second element to be the string "Justin".
     */
-    let classMates = [
-        "Janice",
-    "Chris", "Melanie"];
+    // let classMates = [
+    //     "Janice",
+    // "Chris", "Melanie"];
+    // classMates [1] = "Justin";
+    //
+    // console.log (classMates [0] );
+    // console.log (classMates [1] );
+    // console.log (classMates [2] );
 
 
     // ============================= For Loop
@@ -133,13 +139,16 @@
 
     // example
 
-    // let pies = ["apple", "cherry", "key lime", "huckleberry"];
-
-    // console.log(pies);
-    //
-    // for (let i = 0; i < pies.length; i += 1) {
-    //     console.log("I like " + pies[i]);
-    // }
+//      let pies = ["apple", "cherry", "key lime", "huckleberry"];
+//
+// for (let i = 0; i < pies.length; i += 1) {
+//     console.log(pies[i]);
+// }
+//      console.log(pies);
+//
+//      for (let i = 0; i < pies.length; i += 1) {
+//          console.log("I like " + pies[i]);
+//      }
 
 // backwards
     // let pies = ["apple", "cherry", "key lime", "huckleberry"];
@@ -252,6 +261,15 @@
         1. Loop through your classmates array with a for loop.
         2. Loop through your classmates array with a forEach loop.
      */
+const classMates = ["Janice", "Chris", "Melanie"];
+
+for (let i = 0; i < classMates.length; i += 1) {
+    console.log(classMates[i]);
+
+    classMates.forEach(function (classMates) {
+        console.log(classMates);
+    });
+}
 
 // ============================= ARRAYS AND FUNCTIONS EXAMPLES
 
