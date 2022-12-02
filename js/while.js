@@ -1,5 +1,5 @@
-console.log('Running while.js');
-// Create a while loop that uses console.log() to create the output shown below.
+
+// loop that uses console.log() to create the output shown below.
 // 2
 // 4
 // 8
