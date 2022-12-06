@@ -26,8 +26,8 @@ lastName: "Solley" };
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
  person.sayHello = function() {
-        console.log(person.sayHello())
     }
+    console.log(person.sayHello());
 
 
     /** TODO:
