@@ -11,10 +11,11 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
- const  person = {
-firstName: "Nickolas",
-lastName: "Solley" };
-    console.log(person);
+    const person = {
+        firstName: "Nickolas",
+        lastName: "Solley"
+    };
+//     console.log(person);
 
     /**
      * TODO:
@@ -25,8 +26,9 @@ lastName: "Solley" };
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
- person.sayHello = function() {
-    }
+    person.sayHello = (function() {
+        return "hello from "
+    });
     console.log(person.sayHello());
 
 
@@ -98,5 +100,4 @@ lastName: "Solley" };
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-
-})();
+});

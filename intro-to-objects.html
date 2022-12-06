@@ -473,88 +473,90 @@ let longestName = '';
 
   // ========== Getting a List of Object Keys as an Array
 
-  // const pet1 = {
-  //     givenName: 'Freckles',
-  //     ageInYears: 4,
-  //     species: 'Dog'
-  // };
+  const pet1 = {
+      givenName: 'Freckles',
+      ageInYears: 4,
+      species: 'Dog'
+  };
 
-  // console.log(Object.keys(pet1));
+  console.log(Object.keys(pet1));
 
 
   // ========== Assigning Functionality to an Object
 
-  // const dog1 = {
-  //     petName: 'Sparky',
-  //     age: 4,
-  //     bark: function() {
-  //         console.log("Woof woof!");
-  //     },
-  //     eat: function(food) {
-  //         console.log('Dog is eating...' + food);
-  //     },
-  //     agePet: function() {
-  //         this.age += 1;
-  //     }
-  // }
-  //
-  // const dog2 = {
-  //     petName: 'Rex',
-  //     age: 2,
-  //     bark: function() {
-  //         console.log("Woof woof!");
-  //     },
-  //     eat: function(food) {
-  //         console.log('Dog is eating...' + food);
-  //     },
-  //     agePet: function() {
-  //         this.age += 1;
-  //     }
-  // }
-  //
-  // const dog3 = {
-  //     petName: 'Dino',
-  //     age: 10,
-  //     bark: function() {
-  //         console.log("Woof woof!");
-  //     },
-  //     eat: function(food) {
-  //         console.log('Dog is eating...' + food);
-  //     },
-  //     agePet: function() {
-  //         this.age += 1;
-  //     }
-  // }
-  //
-  // const dogs = [dog1, dog2, dog3];
-  //
-  // console.log(dogs[0].age);
-  // console.log(dogs[1].age);
-  // console.log(dogs[2].age);
-  //
-  // dogs.forEach(function(dog) {
-  //     dog.agePet();
-  // });
-  //
-  // console.log(dogs[0].age);
-  // console.log(dogs[1].age);
-  // console.log(dogs[2].age);
+  const dog1 = {
+      petName: 'Sparky',
+      age: 4,
+      bark: function() {
+          console.log("Woof woof!");
+      },
+      eat: function(food) {
+          console.log('Dog is eating...' + food);
+      },
+      agePet: function() {
+          this.age += 1;
+      }
+  }
+  dog1.bark(); // Woof woof!
+  dog1.eat('chocolate');  //dog is eat... chocolate
+
+  const dog2 = {
+      petName: 'Rex',
+      age: 2,
+      bark: function() {
+          console.log("Woof woof!");
+      },
+      eat: function(food) {
+          console.log('Dog is eating...' + food);
+      },
+      agePet: function() {
+          this.age += 1;
+      }
+  }
+
+  const dog3 = {
+      petName: 'Dino',
+      age: 10,
+      bark: function() {
+          console.log("Woof woof!");
+      },
+      eat: function(food) {
+          console.log('Dog is eating...' + food);
+      },
+      agePet: function() {
+          this.age += 1;
+      }
+  }
+
+  const dogs = [dog1, dog2, dog3];
+
+  console.log(dogs[0].age);
+  console.log(dogs[1].age);
+  console.log(dogs[2].age);
+
+  dogs.forEach(function(dog) {
+      dog.agePet();
+  });
+
+  console.log(dogs[0].age);
+  console.log(dogs[1].age);
+  console.log(dogs[2].age);
 
 
-  // console.log(dog.age);
-  // dog.agePet();
-  // console.log(dog.age);
+  console.log(dog.age);
+  dog.agePet();
+  console.log(dog.age);
 
-  // dog.bark();
-  // dog.eat('steak');
-  // dog.eat('a bone');
-  // dog.eat();
-  //
-  // dog.sayHello = function() {
-  //     console.log('Wagging tail and barking lightly.');
-  // }
-  //
-  // dog.sayHello();
+  dog.bark();
+  dog.eat('steak');
+  dog.eat('a bone');
+  dog.eat();
+
+  dog.sayHello = function() {
+      console.log('Wagging tail and barking lightly.');
+  }
+
+  dog.sayHello();
 
 
 
