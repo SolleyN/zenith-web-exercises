@@ -432,6 +432,11 @@ users.forEach(function(user) {
   console.log(totalAges/ users.length);
 
   // log all the user information in the following format...
+  /*
+        user: Sam | age: 21
+        user: Cathy | age: 34
+        user: Karen | age: 43
+     */
 
   users.forEach(function(user)
 
@@ -442,20 +447,27 @@ users.forEach(function(user) {
   console.log(totalAges);
 
 
-
-  /*
-      user: Sam | age: 21
-      user: Cathy | age: 34
-      user: Karen | age: 43
-   */
-
-  // log the name of the longest given name of a user
+  // log the name of the longest age of a user
 
 
+users.forEach(function(users) {
+  if (user.age > 30) {
+    console.log(user.givenName);
+  }
 
+});
 
+// log the name of the longest given name of a user
+  // create the longest name variable
+  // loop through users and reassign the name of the current user if longer than the longest name variable.
 
+let longestName = '';
 
+ users.forEach(function(user) {
+   if (user.givenName.length > longestName.length) {
+     longestName = user.givenName;
+   }
+ });
 
 
 
