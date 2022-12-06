@@ -412,7 +412,7 @@ users.forEach(function(user) {
 
   // 3. Increase the current age of all users by 1
 
-  users.forEach(function (user) {
+  users.forEach(function(users) {
     users.age += 1;
   });
     console.log(users);
@@ -422,8 +422,26 @@ users.forEach(function(user) {
 
   // Extras...
   // log the total of all the ages
+  let totalAges =0;
+
+  users.forEach(function(user)
+  { totalAges  += user.age;
+
+  });
   // log the average age of all users
+  console.log(totalAges/ users.length);
+
   // log all the user information in the following format...
+
+  users.forEach(function(user)
+
+  {
+    console.log(`user: ${user.givenName} | age: ${user.age}`);
+  });
+
+  console.log(totalAges);
+
+
 
   /*
       user: Sam | age: 21
